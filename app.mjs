@@ -15,4 +15,7 @@ app.use((req,res) => {
     res.redirect("/books")
 })
 
-app.listen(3000, () => { console.log("Application started successfully")} ) // server listens to port 3000
+const PORT = 3000
+
+app.listen(PORT, () => { console.log("Application started at port " + PORT)} ) 
+// server listens to port 3000
