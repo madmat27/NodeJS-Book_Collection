@@ -1,0 +1,7 @@
+import { BookList } from "./booklist.mjs"
+
+const bookList = new BookList()
+await bookList.loadBooksFromFile()
+// await bookList.addBookToFile({"title": "Ο πόλεμος των κόσμων", "author": "Χ. Γ. Γουέλς"})
+console.log(bookList.myBooks)
+
